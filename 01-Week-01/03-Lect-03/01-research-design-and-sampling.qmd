@@ -82,6 +82,16 @@ I do not want class deadlines to cause you extreme stress or anxiety.
 
    - The link is here <a href = "https://posit.cloud/plans/free" target = blank>{{< fa link >}}</a>
 
+# A Quick Snapshot
+
+##
+
+![](img/2.png){fig-align="center"}
+
+##
+
+![](img/1.png){fig-align="center"}
+
 
 
 # Investigation 1 Glossary and Highlights
