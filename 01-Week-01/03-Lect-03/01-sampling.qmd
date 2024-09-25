@@ -9,7 +9,7 @@ format:
       chalkboard: true
 ---
 
-## Today's Outline
+## Today's Outline 
 
 
 - Late Submission Policy
