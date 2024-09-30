@@ -14,10 +14,10 @@ format:
 
 ::: {style="font-size: 30px"}
 
-Until now, we  
+Until now, we have:  
 
-- identified the differences between anecdotal evidence and empirical evidence    
-- discussed the differences between observational study, and experimental study 
+- identified the differences between anecdotal and empirical evidence    
+- discussed the differences between observational and experimental studies 
 - defined the terms _population_ and _sample_
 - examined different types of random sampling   
 
@@ -25,7 +25,7 @@ Until now, we
 And OF COURSE
 :::
 
-- We took our first steps in R!
+- We took our first steps in RStudio!
 
 :::
 
@@ -33,13 +33,13 @@ And OF COURSE
 ## 
 ### What about Today?
 
-Today we will
+Today we will:
 
 - have an introduction to descriptive statistics  
-  - see some examples of frequency distributions enabling us to summarize __categorical variable__ and/or __quantitative variable__ 
+  - see examples of frequency distributions enabling us to summarize __a categorical variable__ or __a quantitative variable__ 
     - either as a table or a graph
 
-- see how to identify shape, center, and (maybe tomorrow) dispersion in a data set.
+- see how to identify shape, center, and _(maybe tomorrow)_ dispersion in a data set.
 
 
 ## 
@@ -62,7 +62,7 @@ Data sets can be messy and overwhelming at first glance. By using statistics, we
 
 - We use different colors, shapes, and the coordinate system to summarize data
 
-- They can tell a story or can be useful for exploring data
+- They can tell a story or help explore data
 
 
 ##
@@ -105,14 +105,14 @@ According to [Royal Statistical Society](https://royal-statistical-society.githu
 - [Color Blindness Simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/)
 
   - We will only touch the surface of data visualization in this course. It is a rich field. 
-  - Let's dive into Descriptive Statistics to learn more about the basics.
+  - Let's dive into descriptive statistics to learn more about the basics.
 
 # But Before... Notations and Vocabulary
 ## 
 ### Notations
 
-- We employ a symbolic convention to differentiate between a __variable__ and __an observed value of that variable__.
-  - $Y = weight$ (__Variable__)
+- We use symbols to differentiate between a __variable__ and __an observed value of that variable__.
+  - $Y = mass$ (__Variable__)
   - $y = 12.8$ lb (__Observed Value__)
 
 ## 
@@ -123,15 +123,15 @@ __Parameter:__ A number represents the entire population (e.g., population mean)
 :::
 
 ::: fragment
-__Statistic:__ A number calculated from sample data (e.g., sample mean).
+__Statistic:__ A number calculated from a sample (e.g., sample mean).
 :::
 
 ::: fragment
-__Descriptive Statistics:__ Statistics used for describing and summarizing our data.
+__Descriptive Statistics:__ Statistics used for describing and summarizing data.
 :::
 
 ::: fragment
-__Inferential Statistics:__ Statistics used for making predictions and draw conclusions. _(We will come to that point on Wednesday)_
+__Inferential Statistics:__ Statistics used to make predictions and draw conclusions. _(We will get to this on Wednesday)_
 :::
 
 ## 
@@ -147,11 +147,11 @@ __Inferential Statistics:__ Statistics used for making predictions and draw conc
 ## Introduction
 
 
-- A __frequency distribution__ is a representation of the frequency, indicating how often each value appears in a dataset. 
+- A __frequency distribution__ is a representation of the frequency, indicating how often each value appears in a data set. 
 - This information can be conveyed through tables or, more visually, using a graph.
 
 
-# Summarizing Categorical Variables
+# Summarizing A Categorical Variable
 
 ## A Frequency Distribution Table 
 
@@ -190,7 +190,7 @@ kable(frequency_distribution_df, caption = "Frequency Distribution of Smoking St
 
 ## Bar Chart 
 
-A visual representation of categorical data that illustrates the quantity of observations within each category.
+A visual representation of categorical data showing the number of observations in each category.
 
 ```{r}
 #| echo: false
@@ -248,7 +248,7 @@ barplot(likert_frequency[order(likert_frequency, decreasing = TRUE)],
 
 :::
 
-# Summarizing Quantitative Variables 
+# Summarizing A Quantitative Variable 
 
 ## Grouped Frequency Distributions
 
@@ -259,12 +259,13 @@ barplot(likert_frequency[order(likert_frequency, decreasing = TRUE)],
 ::: {style="font-size: 30px"}
 
 - A visual summary of a quantitative variable.  
-  - The x-axis represents the range of values in the dataset, divided into bins,  
-  - The y-axis represents the frequency or count of data points within each bin.
+  - The x-axis represents the range of values divided into bins,  
+  - The y-axis represents the count of data points in each bin.
 
-**No Gaps between Bars:** Unlike a bar chart, there are no gaps between the bars in a histogram because the bins are continuous.
+- Histograms help identify patterns, outliers, central tendency, and variability.
 
-- Histograms provide insights into the underlying distribution of a dataset, helping to identify patterns, detect outliers, central tendency, and variability.
+
+- **No Gaps between Bars:** Unlike a bar chart, there are no gaps between the bars in a histogram because the bins are continuous.
 
 :::
 
@@ -276,7 +277,7 @@ barplot(likert_frequency[order(likert_frequency, decreasing = TRUE)],
 
 ## Shapes of Distributions
 
-The shape of a distribution can be represented by a smooth curve that provides an approximation of the histogram.
+The shape of a distribution can be represented by a smooth curve approximating of the histogram.
 
 ::: fragment
 ```{r}
