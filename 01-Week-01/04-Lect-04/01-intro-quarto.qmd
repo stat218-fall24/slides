@@ -106,35 +106,7 @@ Quarto is...
 
 :::
 
-## Creating a Quarto Document
-::: {style="font-size: 30px"}
-
-<br>
-
-- We will use Quarto to produce (render!) PDF documents for our lab assignments where we integrate both text and code.
-<br>
-
-::: callout-tip
-- You can create your own Quarto document by clicking `File > New File > Quarto Document`
-
-- Let's try to create our first Quarto document!
-
-:::
-:::
-
-## Creating a Quarto Document
-
-::: {style="text-align: center; font-size: 23px"}
-
-<img src="img/new-quarto.png" alt="Pane Layout in RStudio" style="width: 2500px;">
-
-How to Create a New Quarto Document
-:::
-
-## 
-
-![](img/panes-in-R.png)
-  
+# Today's Tasks 
 
 ## 
 ### Task 1: Create A Folder
