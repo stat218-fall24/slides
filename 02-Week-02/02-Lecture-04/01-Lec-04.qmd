@@ -10,7 +10,7 @@ format:
 ---
 
 
-# Take Away Messages From the Last Week
+# Take Away Messages From Last Week
 
 ## 
 ### How to Create An Object
@@ -124,7 +124,7 @@ data.frame(name = names, wedding_year = wedding_years)
 
 ## Today's Menu
 
-Today we will be familiar with
+Today we will cover:
 
 - more functions in R
 - How to Install Packages
@@ -140,16 +140,16 @@ Today we will be familiar with
 
 - After that, you will start working with your group members.
 
-- You may not finish your first lab assignment today but you have time by Sunday midnight. 
+- You may not finish your first lab assignment today but you have time until Sunday midnight. 
 
 
 ## 
 ### How Can I Install a Package and Use It?
 ::: {style="text-align: left; font-size: 24px"}
 
-- R users can create/contribute packages, and they are for free! 
+- R users can create/contribute packages, and they are free! 
 
-- For this lab, and many others in the future, we will use the following:
+- For this lab, and many others in the future, we will use:
 
   - The `tidyverse` “umbrella” package which has many different R packages for data wrangling and data visualization
   -   The `openintro` R package is our second textbook's package and we will use this for our lab sessions.
@@ -171,11 +171,11 @@ install.packages("openintro")
 
 
 ## 
-### Library Function in R
+### The Library Function in R
 ::: {style="font-size: 30px"}
 
 
-The `library()` function in R is like opening a toolbox. Imagine you have a toolbox filled with different tools, and each tool helps you do a specific job. Similarly, in R, a library is like a toolbox that contains specialized tools (packages) for specific tasks.
+The `library()` function in R is like opening a toolbox. Each toolbox (library) contains tools (packages) for specific tasks.
 
 When you use the `library()` function, you're telling R to open a specific toolbox (load a package) so that you can access and use the tools inside.
 
@@ -420,7 +420,7 @@ _Coder:_
 
 ::: callout-tip
 
-- Let's download today's Quarto document from Canvas under the LAB Assignment 1 (GROUP) as `02-Lab-Assignment-01.qmd`
+- Let's download today's Quarto document from Canvas under the LAB Assignment 1 (GROUP) titled as `02-Lab-Assignment-01.qmd`
 - DO NOT FORGET to save it to your STAT 218 Folder!
 
 :::
@@ -438,7 +438,7 @@ _Coder:_
 
 ## How to Complete Lab Assignment 1
 
-- Just go back and follow this slide show from the beginning. 
+- Just go back and follow this slide show from the beginning of Slide 9. 
 
 - You will be mainly changing the name of the data set and variables.
 

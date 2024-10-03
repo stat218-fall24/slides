@@ -25,7 +25,7 @@ data("penguins")
 
 **NOTE:** Please ignore `penguins_raw` data for this class and USE `penguins` for this assignment.
 
-**Question 0: Please add a code chunk below and add necessary `install.packages()` and `library()` functions (look at my slides). If you skip this part, your functions will not work.**
+**Question 0: Please add a code chunk below and add necessary `install.packages()` and `library()` functions (look at the Slide 9). If you skip this part, your functions will not work.**
 
 Add your code chunk here.
 
@@ -54,7 +54,7 @@ Type your answer (2-3 sentences) here.
 Type your answer here.
 
 
-**Question 3: What types of variables are there in this data set? Identify each variable below (nominal, ordinal, discrete, and continuous?)**
+**Question 3: What types of variables are there in this data set? Identify each variable below (categorical, categorical - binary, quantitative)**
 
 **species:**
 
@@ -76,8 +76,6 @@ Type your answer here.
 **Question 4: Calculate the mean and median values for `bill_length_mm`.**  
 *(Hint: You will see `NA` values when you run the function because of missing data. Use the Console Pane by typing `?mean` to find which argument is helpful for removing NAs.)*
 
-
-This version adds slight tweaks to enhance readability.
 
 ```{r}
 
