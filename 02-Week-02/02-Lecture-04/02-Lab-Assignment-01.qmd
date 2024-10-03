@@ -83,10 +83,15 @@ Type your answer here.
 
 ```
 
+Explain what you see in the output
+
 **Question 5: Please create a bar chart by using `ggplot()` function for the variable `species`.**
+
 
 ```{r}
 
 # Put your R Code Chunk here.
 
 ```
+
+Explain what you see in the output.
