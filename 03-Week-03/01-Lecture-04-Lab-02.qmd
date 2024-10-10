@@ -556,8 +556,8 @@ ggplot(data = babies,
            shape = smoke,
            color = smoke)) +
   geom_point(size = 4) +
-  labs(x = "Birth Weight",
-       y = "Length of Gestation (days)",
+  labs(x = "Length of Gestation (days)",
+       y = "Birth Weight",
        title = "Babies")
 ```
 
@@ -576,8 +576,8 @@ ggplot(data = babies,
            shape = smoke,
            color = smoke)) +
   geom_point(size = 4) +
-  labs(x = "Birth Weight",
-       y = "Length of Gestation (days)",
+  labs(x = "Length of Gestation (days)",
+       y = "Birth Weight",
        title = "Babies") +
   theme_bw()
 ```
@@ -597,8 +597,8 @@ ggplot(data = na.omit(babies),
            shape = smoke,
            color = smoke)) +
   geom_point(size = 4) +
-  labs(x = "Birth Weight",
-       y = "Length of Gestation (days)",
+  labs(x = "Length of Gestation (days)",
+       y = "Birth Weight",
        title = "Babies") +
   theme_bw() +
   theme(text = element_text(size=18))
