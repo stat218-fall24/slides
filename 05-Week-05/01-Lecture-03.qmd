@@ -1,0 +1,170 @@
+---
+title: "Comparing Two Proportions"
+subtitle: "STAT 218 - Week 5, Lecture 3"
+format: 
+  revealjs:
+      theme: simple
+      slide-number: true
+      chalkboard: true
+      incremental: true
+---
+
+
+
+## 
+### Introduction
+::: {style="font-size: 32px"}
+
+- So far, we have interested in the analysis of a single variable.
+  - In practice, most of the scientific research involves the comparison of 2 or more samples from different populations.
+- If the observed variable is categorical, the comparison of two samples can include comparison of proportions.
+
+:::
+
+## 
+### Notation
+::: {style="font-size: 24px"}
+
+- To be able to differentiate two samples from each other, we will use __subscript__.
+
+::: fragment
+![Figure 1. Naturally Occurring Populations](img/notation.png){fig-align="center"}
+:::
+
+
+- The two populations that we are interested in can be either
+  - naturally occurring populations (Figure 1) OR
+  - conceptual populations defined by certain experimental conditions.
+
+:::
+
+
+## 
+### Let's Refresh Our Memory
+::: {style="font-size: 28px"}
+
+::: fragment
+::: {.callout-note title="Sampling Distribution of $\hat{p}$"}
+::: {.nonincremental}
+
+We will scaffold today's content with those previous knowledge   
+
+The sampling proportion for $\hat{p}$ based on a sample size $n$ from a population with a true proportion $\pi$ is nearly normal when
+
+- at least 10 successes and 10 failures in the sample. We call this __success-failure condition.__
+
+- The standard error was
+
+
+$$
+SE_{\hat{p}} = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+$$
+
+:::
+:::
+:::
+
+::: fragment
+$\pi$ = Population proportion 
+
+$\hat{p}$ = Sample proportion
+:::
+:::
+
+
+## 
+### Confidence Intervals for a Proportion
+
+<br>
+
+A confidence interval provides a range of plausible values for the parameter $\pi$, and when $\hat{p}$ can be modeled using a normal distribution, the confidence interval for $\pi$ takes the form
+
+$$
+\hat{p} \pm multiplier \times SE_{\hat{p}}
+$$
+
+# Comparing Two Proportions
+
+## Introduction
+
+::: {style="font-size: 28px"}
+
+::: fragment
+::: {.callout-note title="Sampling Distribution of $\hat{p_1}$ - $\hat{p_2}$"}
+
+::: {.nonincremental}
+
+We can extend what we have learned.
+
+The differences in population proportions for $\hat{p_1} - \hat{p_2}$ can be modeled using a normal distribution when
+
+- The data are independent __within and between the two groups.__
+  - Generally this is satisfied if the data come from two independent random samples or if the data come from a randomized experiment.
+- The success-failure condition holds for both groups, where we check successes and failures in each group separately.
+
+When these conditions/assumptions are met, then the standard error of $\hat{p_1} - \hat{p_2}$ is equal to
+
+
+$$
+SE = \sqrt{\frac{\hat{p_1}(1-\hat{p_1)}}{n_1} + \frac{\hat{p_2}(1-\hat{p_2})}{n_2}}
+$$
+where $\hat{p_1}$ and $\hat{p_2}$ represent the sample proportions, and $n_1$ and $n_2$ represent the sample sizes.
+
+:::
+:::
+:::
+:::
+
+
+## 
+### An Example - I
+::: {style="font-size: 28px"}
+Scientists predict that global warming may have big effects on the polar regions within the next 100 years. One of the possible effects is that the northern ice cap may completely melt. 
+
+
+::: fragment
+Would this bother you a great deal, some, a little, or not at all if it actually happened?
+
+(a) A great deal   
+(b) Some
+(c) A little
+(d) Not at all
+:::
+:::
+
+## 
+### Motivating Example - II
+::: {style="font-size: 28px"}
+The GSS asks the same question, below are the distributions of responses from the 2010 GSS as well as from a group of introductory statistics students at Duke University:
+:::
+
+:::{.columns}
+::: {.column width="50%"}
+
+![](img/table-ss.png)
+:::
+
+::: {.column width="50%"}
+::: {style="font-size: 24px"}
+::: fragment
+- __Parameter of interest:__ Difference between the proportions of __all__ Duke students and __all__ Americans who would be bothered a great deal by the northern ice cap completely melting.
+
+
+- __Point estimate:__ Difference between the proportions of __sampled__ Duke students and __sampled__ Americans who would be bothered a great deal by the northern ice cap completely melting.
+
+
+:::
+:::
+:::
+:::
+
+## 
+### An Example - CI
+
+Construct a 95% confidence interval for the difference between the proportions of Duke students and Americans who would be bothered a great deal by the melting of the northern ice cap ($\pi_{Duke}$ - $\pi_{US}$).
+
+- Check Conditions/Assumptions
+- Calculate the Standard Error of a sample proportion
+- Calculate 95% Confidence Interval
+  - 95% CI = (-0.108, 0.086)
+- I'll leave this as an exercise.
