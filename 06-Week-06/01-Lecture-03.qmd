@@ -288,9 +288,9 @@ Is it reasonable to believe that the substance may affect plant growth? Discuss 
 
 
 ##
-### Type II Error ($\beta$)
+### Type II Error ($\beta$) 
 
-::: {style="font-size: 28px"}
+::: {style="font-size: 32px"}
 
 :::{.callout-note title="Definition"}
 
