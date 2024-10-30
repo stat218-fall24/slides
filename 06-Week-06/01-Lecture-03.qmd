@@ -356,32 +356,3 @@ reader is free to choose his or her own value of a in evaluating the reported re
 From [Essential Guide to Effect Sizes](https://www.amazon.com/gp/product/0521142466/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0521142466&linkCode=as2&tag=allaboutforen-20&linkId=7ad02ab63fa078ea0f478f4505fd6417) by Paul D. Ellis (2010)
 :::
 :::
-
-## 
-#### Consequences of Inappropriate Use of Student’s t
-
-::: {style="font-size: 24px"}
-:::{.incremental}
-Our discussion of the t test and confidence interval (in Sections 7.3–7.8) was based
-on the conditions of
-
-1. the data can be regarded as coming from two independently chosen random samples,
-
-2. the observations are independent within each sample, and
-
-3. each of the populations is normally distributed (If n1  and n2  are large, this condition is less important). 
-
-- Violation of the conditions may render the methods inappropriate.
-- If the conditions are not satisfied, then the $t$ test may be inappropriate in two possible ways:
-
-1. It may be invalid in the sense that the actual risk of Type I error is larger than the nominal significance level a. (To put this another way, the $P$-value yielded by the $t$ test procedure may be inappropriately small.)
-
-2. The $t$ test may be valid, but less powerful than a more appropriate test.
-
-- If the design includes hierarchical structures that are ignored in the analysis, the $t$ test may be seriously invalid. If the samples are not independent of each other, the usual consequence is a loss of power.
-
-:::
-:::
-
-
-
