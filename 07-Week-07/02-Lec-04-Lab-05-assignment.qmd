@@ -1,0 +1,118 @@
+---
+title: "STAT 218 Lab Assignment 5"
+subtitle: "Week 6 Lecture 4 Lab 5"
+author: 
+  - "Team Member 1: NAME HERE"
+  - "Team Member 2: NAME HERE"
+  - "Team Member 3: NAME HERE"
+date: today
+date-format: "MMMM D[<sup style='font-size:65%;'>th</sup>], YYYY"
+format: pdf
+execute:
+  echo: true
+---
+
+## Lab Assignment 5
+
+In this assignment, we will work with an external data set. Make sure download the dataset (Example 8.3.4.csv) from Canvas as well.
+
+
+Let's use `library` function and load the data sets that we will use today.
+
+```{r}
+#| output: false
+library(tidyverse)
+stream_data <- read_csv("Example 8.3.4.csv")
+```
+
+
+# Paired Samples _t_ test
+
+__Example of a Case:__ Pollutants in a stream may accumulate or attenuate as water flows down the stream. In a study to monitor the accumulation and attenuation of fecal contamination in a stream running through cattle rangeland, monthly water specimens were collected at two locations along the stream over a period of 21 months.
+
+The data set `stream` the total coliform count (MPN/100ml) for a water specimen.
+
+__Question 1. What is the research question of this study?__
+
+
+Type your answer here.
+
+
+__Question 2. What type of variables do we have in this study?__
+
+
+Type your answer here.
+
+
+__Question 3. Please list the assumptions required for this test and check the assumption of normality for this study. Interpret the assumptions overall.__
+
+
+_Random Sampling:_ Explain here.
+
+_Independence of Observation:_ Explain here.
+
+_Normal Distribution:_ Explain here.
+
+
+- _This output is from a calculation of Shapiro-Wilk test. We generally use Shapiro-Wilk test for relatively smaller sample size because visuals can be misleading in smaller sample sizes. Please interpret Shapiro-Wilk $p$-value._
+
+
+	Shapiro-Wilk normality test
+
+data:  stream$Difference
+W = 0.9641, p-value = 0.6022
+
+
+
+Type your answer here.
+
+
+__Question 4. Perform a paired samples $t$-test to assess whether the mean total coliform count is consistent across the two locations. Use the 5% significance level ($\alpha = 0.05$).__
+
+
+Type your answer here.
+
+
+
+__Question 4.1 Write out the null & the alternative hypotheses within the context of this study:__
+
+Type your answer here.
+
+
+__Question 4.2. Determine \($\alpha$) level (Find it within the case given above).__
+
+Type your answer here.
+
+
+__Question 4.3. Compute test statistic by running the code chuck below and explain what you see in the output.__
+
+```{r}
+# Convert to wide format
+wide_data <- stream_data %>%
+  pivot_wider(names_from = location, values_from = coliform_count)
+
+# Perform paired t-test
+t.test(wide_data$upstream, wide_data$downstream, paired = TRUE)
+
+```
+
+
+Type your answer here.
+
+
+__Question 4.4: What is the difference between (stream_data) and (wide_data)? What did pivot_wider() function do in the Question 4.3?__
+
+
+Type your answer here.
+
+
+__Question 4.5. Draw conclusion and write a conclusion statement__
+
+
+Type your answer here.
+
+
+
+
+
+
