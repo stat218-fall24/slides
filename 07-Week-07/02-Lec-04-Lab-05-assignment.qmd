@@ -67,10 +67,7 @@ W = 0.9641, p-value = 0.6022
 Type your answer here.
 
 
-__Question 4. Perform a paired samples $t$-test to assess whether the mean total coliform count is consistent across the two locations. Use the 5% significance level ($\alpha = 0.05$).__
-
-
-Type your answer here.
+__Directions of Question 4: Perform a paired samples $t$-test to assess whether the mean total coliform count is consistent across the two locations. Use the 5% significance level ($\alpha = 0.05$).__
 
 
 
