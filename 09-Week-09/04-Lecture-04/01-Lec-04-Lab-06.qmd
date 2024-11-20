@@ -14,7 +14,7 @@ format:
 ##
 ### Before Proceeding Further...
 
-::: {style="font-size: 28px"}
+::: {style="font-size: 30px"}
 
 Let me introduce you the pipe operator ( |> )
 
